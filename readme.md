@@ -17,15 +17,15 @@ If you have installed Grunt in the past you may want to remove it first:
 
 <pre lang="javascript">> npm uninstall -g grunt</pre>
 
-Now you can install Gruntâ€™s command line tools by typing out the following:
+Now you can install Grunt's command line tools by typing out the following:
 
 <pre lang="javascript">> npm install -g grunt-cli</pre>
 
 From here, Grunt should work via the command line. If you want to learn more about how all of this works check out my blog post on <a target="_blank" href="http://jessefreeman.com/dev-techniques/automating-typescript-with-node-and-grunt/">Automating TypeScript with Node and Grunt</a>.
 
-## Setting up the Templateâ€™s Dependencies
+## Setting up the Template's Dependencies
 
-Via the command line, cd into the templateâ€™s directory on your compute and run the following command:
+Via the command line, cd into the template's directory on your compute and run the following command:
 
 <pre lang="javascript">> npm install</pre>
 
@@ -33,7 +33,7 @@ This will run through all the dependencies in the package.json file and install 
 
 <img border="0" width="624" height="362" id="Picture 1" src="http://jessefreeman.com/wp-content/uploads/2013/05/pt-image001.jpg" />
 
-Next you will need to download a copy of <a target="_blank" href="https://github.com/photonstorm/phaser">Phaserâ€™s source code</a> add it to your src directory. I keep it in a folder called src/libs/Phaser. Make sure you copy the main Phaser project code, you donâ€™t need the tests or other files floating around the directory.
+Next you will need to download a copy of <a target="_blank" href="https://github.com/photonstorm/phaser">Phaser's source code</a> add it to your src directory. I keep it in a folder called src/libs/Phaser. Make sure you copy the main Phaser project code, you don't need the tests or other files floating around the directory.
 
 <img border="0" width="274" height="288" id="Picture 2" src="http://jessefreeman.com/wp-content/uploads/2013/05/pt-image002.png" />
 
@@ -45,11 +45,11 @@ In the directory and it will launch a browser with the default screen which will
 
 <img border="0" width="624" height="439" id="Picture 3" src="http://jessefreeman.com/wp-content/uploads/2013/05/pt-image003.jpg" />
 
-You can start building a game with Phaser by modifying the game.ts file inside of the src/game directory. While you have the Grunt task running in the browser your project will automatically recompile every time you make a change to any TypeScript file inside of the src directory. Make sure you disable your browserâ€™s cache to see changes.
+You can start building a game with Phaser by modifying the game.ts file inside of the src/game directory. While you have the Grunt task running in the browser your project will automatically recompile every time you make a change to any TypeScript file inside of the src directory. Make sure you disable your browser's cache to see changes.
 
 ## What Else?
 
-Since git doesnâ€™t include empty directories the one thing I would suggest adding is an assets directory in your deploy folder. This is where you should keep all of your externally loaded content such as sounds, sprites and textures. I usually create folders with the name of each type of media I am loading to keep things organized.
+Since git doesn't include empty directories the one thing I would suggest adding is an assets directory in your deploy folder. This is where you should keep all of your externally loaded content such as sounds, sprites and textures. I usually create folders with the name of each type of media I am loading to keep things organized.
 
 <img border="0" width="287" height="380" id="Picture 4" src="http://jessefreeman.com/wp-content/uploads/2013/05/pt-image004.png" />
 
