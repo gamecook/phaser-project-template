@@ -1,9 +1,3 @@
-## Phaser Project Template 
-
-The other week I wrote <a target="_blank" href="http://jessefreeman.com/game-dev/building-a-html5-game-with-phaser/">an introduction to Phaser</a> and I wanted to follow up with a short walkthrough on how to get a project up and running with Phaser, TypeScript, NodeJS and Grunt. I have talked about a <a target="_blank" href="http://jessefreeman.com/dev-techniques/automating-typescript-with-node-and-grunt/">similar workflow in the past</a> as well but figured I should come up with a basic Phaser Project Template to help get others started. Here are some instructions on how to use it.
-
-You can download the Phaser Project Template from my Github repo <a target="_blank" href="https://github.com/gamecook/phaser-template-project">here</a>.
-
 ## What is the Phaser Project Template?
 
 This is a simple project template I created to help add a structure to your next Phaser game. It includes the following things:
