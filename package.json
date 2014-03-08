@@ -1,8 +1,8 @@
 {
-  "name": "PhaserTemplate",
-  "version": "1.0.0",
+  "name": "game",
+  "version": "2.0.0",
   "description": "A simple template project to quickly get up and running with Phaser.",
-  "main": "deploay/js/Game.js",
+  "main": "deploay/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,10 @@
   "author": "Jesse Freeman",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "typescript": "~0.8.3",
-    "grunt-typescript": "~0.1.4",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-open": "~0.2.0"
+      "grunt-open": "~0.2.3",
+      "grunt": "~0.4.2",
+      "grunt-contrib-concat": "~0.3.0",
+      "grunt-contrib-watch": "~0.5.3",
+      "grunt-contrib-connect": "~0.6.0"
   }
 }

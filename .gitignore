@@ -6,4 +6,4 @@ obj/*
 *.csproj.user
 *.sln
 *.suo
-src/lib/Phaser/*
+.idea/*

@@ -1,9 +1,8 @@
 module.exports = function (grunt) {
-
-    grunt.loadNpmTasks('grunt-typescript');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-open');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -15,19 +14,17 @@ module.exports = function (grunt) {
                 }
             }
         },
-        typescript: {
-            base: {
-                src: ['src/**/*.ts'],
-                dest: 'deploy/js/game.js',
-                options: {
-                    module: 'amd',
-                    target: 'es5'
-                }
+        concat: {
+            dist: {
+                src: [  "src/lib/**/*.js",
+                    "src/game/**/*.js"
+                     ],
+                dest: 'deploy/js/<%= pkg.name %>.js'
             }
         },
         watch: {
-            files: '**/*.ts',
-            tasks: ['typescript']
+            files: 'src/**/*.js',
+            tasks: ['concat']
         },
         open: {
             dev: {
@@ -36,6 +33,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', ['connect', 'open', 'watch']);
+    grunt.registerTask('default', ['concat', 'connect', 'open', 'watch']);
 
 }
